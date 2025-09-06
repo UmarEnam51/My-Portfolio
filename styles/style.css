@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-padding-top: 85px;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all .5s;
+    padding-top: 950px;
+
+    /* margin-bottom: 10000px; */
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+
+    position: fixed;
+    top: 0;
+
+    padding: 20px;
+}
+
+.nav-list {
+    justify-content: space-around;
+
+}
+
+.nav-list ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-list li a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+}
+
+.nav-list li a:hover {
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: medium;
+    box-shadow: 0px 3px 5px #0f0f0f3d;
+}
+
+.profile-img {
+    width: 170px;
+    border-radius: 50%;
+    border-color: rgb(217, 223, 223);
+    border-style: solid;
+    border-width: 5px
+}
+
+.profile-img:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #0f0f0f59;
+    transform: translateY(-10px);
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    /* margin-top: 1100px; */
+
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-about,
+.line-project,
+.line-sertifikat {
+    width: 200px;
+    height: 5px;
+    background-color: rgb(178, 189, 189);
+    margin-top: 3px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 5px;
+}
+
+.container-about {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.deskripsi-about {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-job {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+.container-footer {
+    width: 100vw;
+    max-width: 1200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    padding: 15px 0;
+    margin: 0 auto;
+
+}
+
+.container-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.card-project-1 {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(236, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.container-card-project {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card-project-1:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 5px 10px #0f0f0f27;
+}
+
+.img-project-1 {
+    border-radius: 10px;
+    width: 300px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: 0px 0px 10px #0f0f0f27;
+}
+
+.title-project-1 {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.to-next-project-1 a {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.to-next-project-1:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px #0f0f0f4d;
+}
+
+.container-sertifikat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* margin-bottom: 1000px; */
+}
+
+.container-card-sertifikat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.card-sertifikat {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.card-sertifikat p {
+    font-size: small;
+}
+
+aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+.social-media {
+    height: 100%;
+    display: flex;
+}
+
+.social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-media li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media li a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    transition: all .1s ease;
+}
+
+.social-media li a:hover {
+   cursor: pointer;
+}
+
+.social-media li:nth-child(1) a:hover {
+    background-color: white ;
+    background: linear-gradient(135deg, #EA4335 0%, #FBBC05 25%, #34A853 50%, #4285F4 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media li:nth-child(2) a:hover {
+    background-color: white;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media li:nth-child(3) a:hover {
+    background-color: white;
+    background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 25%, #FCB045 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media li:nth-child(4) a:hover {
+    background-color: white;
+    background: linear-gradient(135deg, #BD081C 0%, #E60023 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
